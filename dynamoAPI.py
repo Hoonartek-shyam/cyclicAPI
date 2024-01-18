@@ -27,7 +27,7 @@ table_name = 'super-panama-hat-fawnCyclicDB'
 AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjECsaCmFwLXNvdXRoLTEiRzBFAiEAuiMYlOiWKqfnS0dQMTzJ4tt1yNszpXWobVOHw2MCdGgCIFb2h/qKt4qw5JQUoMsCBNwGo9QDm6u5cjcfm5Y4uWa0KrgCCNT//////////wEQABoMODQ4NDgzMjgzOTE0Igzro+LbzMsBcvUyfTgqjAKJDMe3Wo5oEwcRiBmbCAN9WLfzbxXghbWeCv3Wk4VPEHWERPndLxqQ4EAGPmstQdYg4V7dWfcP3420xxALMxI35fLl3RHEK1WFlk0YZJr2SLzlLZ8BYYvhG2B3tx9f+SONzqgRhfgiwYnhcNtAe/qeG5RUuZpl8YWUI2K9NIHEmTyo+t0sTpplbhvlCjviLb+RAbs4mIJ+Z3vcJE0e8Q1cIEnO7L16xrlaQVK8FGqs/1vqCMW1DXfNQanbA35aq5eAeTpe/4WhnIgAJSf+VTpnc+aoGY3R6JBSGWUonJ7b8vBiEZn3g5jCwOxVhmzjT0XHCmryPTsHRG2l1DN/0jBSQli98cGlcFO9gczlMMmMpK0GOp0BTqD3z42AKHKIdRfqJTw7gga0c8l4kWlDnmYcQQOnk7a69pPWBdWqhYudEHG1beVUyzAJYaPTxc3DJUTjozebLirD0PZ7nrs1zrdaBRyAn3R27FCuE2GjE64WeJ+REoVD4SzJfUl8+XgP13uDv3WoMkPBN3uO4LJ9+f7p2eati/p+Z2d43WOOpyMPvxObCvBOoXM4GIwP2uUJkfJm4w=="
 # Create a DynamoDB resource
 
-dynamodb = boto3.resource('dynamodb')  # Replace 'your-region' with your AWS region
+dynamodb = boto3.resource('dynamodb',region_name = 'ap-northeast-1')  # Replace 'your-region' with your AWS region
 table_name = 'super-panama-hat-fawnCyclicDB'  # Replace with your DynamoDB table name
 table = dynamodb.Table(table_name)
 
